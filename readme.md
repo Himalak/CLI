@@ -10,27 +10,6 @@ import (
   "flag"
 )
 ```
-
-[In part 1](../readme.md), we covered the fundamentals of writing basic Go <br/>
-[In part 2](../part-2.json/readme.md), we've learn how to use basic data structures like `json` so we can send\receive data. <br/>
-[Part 3](../part-3.http/readme.md) was about exposing data via a Web server.
-
-We'll be combining these techniques so we can serve our `videos` data over a commandline application.
-
-As always, let's start with our `dockerfile` , `main.go` and `videos.go` we created in Part 2
-
-## Dev Environment
-
-The same as Part 1+2+3, we start with a [dockerfile](./dockerfile) where we declare our version of `go`.
-
-```
-cd golang\introduction\part-4.commandline
-
-docker build --target dev . -t go
-docker run -it -v ${PWD}:/work go sh
-go version
-```
-
 ## Create our App
 
 Create a new directory that holds defines our `repository` and holds our `module`
